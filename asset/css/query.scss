@@ -1,0 +1,310 @@
+// --------------------MEDIA QUERIES----------------------- 
+@import "home.scss";
+@media (max-width:1200px) {
+    $header-height: 7.5rem;
+    header {
+        height: $header-height;
+    }
+    .containeR {
+        @include area(100%, 100%);
+        display: grid;
+        grid-template-rows: $header-height calc(100vh - $header-height);
+        background-color: #F5F5FF;
+    }
+    .nav-bar {
+        width: 95%;
+    }
+    .top-nav {
+        .left-top-nav {
+            @include area(75%, 14.5%);
+        }
+        .center-top-nav {
+            width: 59%;
+        }
+        .right-top-nav {
+            @include area(75%, 26.5%);
+            button {
+                #right-arrow {
+                    display: none;
+                }
+            }
+        }
+    }
+    // End of header
+    .book-triplet {
+        .bucket {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    .best-book {
+        .best-book-cont {
+            width: 100%;
+        }
+    }
+    .new-book {
+        width: 97.5%;
+        display: grid;
+        place-items: center;
+        .new-book-cont {
+            width: 97.5%;
+            .new-book-slider {
+                width: 100%;
+            }
+        }
+    }
+    .get-book {
+        .get-book-cont {
+            .get-book-main {
+                .get-started {
+                    @include area(fit-content, 80%);
+                    .right {
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        .cont {
+                            gap: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .all-book {
+        .all-book-cat {
+            .get-book {
+                .get-book-main {
+                    .get-started {
+                        @include area(fit-content, 70%);
+                        display: none;
+                    }
+                }
+            }
+            .cont {
+                .main {
+                    display: grid;
+                    grid-template-columns: repeat(6, 1fr);
+                }
+            }
+        }
+    }
+    .wirter-speech {
+        width: 100%;
+        .writer-cont {
+            width: 85%;
+        }
+    }
+    .community {
+        .community-cont {
+            width: 70%;
+        }
+    }
+    footer {
+        .footer-cont {
+            width: 94%;
+        }
+    }
+    .christmas {
+        display: none;
+    }
+}
+
+// ------------------------FOR TABLETS------------------------
+@media (max-width:991px) {
+    $header-height: 6.5rem;
+    header {
+        height: $header-height;
+    }
+    .containeR {
+        @include area(100%, 100%);
+        display: grid;
+        grid-template-rows: $header-height calc(100vh - $header-height);
+        background-color: #F5F5FF;
+    }
+    .nav-bar {
+        width: 97.5%;
+    }
+    .top-nav {
+        .left-top-nav {
+            height: 100%;
+            width: 18%;
+            @include flex(row, start, center);
+        }
+        .center-top-nav {
+            width: 62%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            form {
+                height: 2.3rem;
+                .button-bucket {
+                    button {
+                        padding: .3rem .75rem;
+                    }
+                }
+                .mic {
+                    .microphone {
+                        #microphone {
+                            padding: .25rem .45rem;
+                        }
+                    }
+                }
+            }
+        }
+        .right-top-nav {
+            height: 100%;
+            width: 20%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            .help {
+                display: none;
+            }
+            .login {
+                margin-right: -12%;
+            }
+        }
+    }
+    .foot-nav {
+        margin-bottom: .5rem;
+        .left-foot-nav {
+            width: 20%;
+            .left-cont {
+                gap: 1rem;
+            }
+        }
+        .center-foot-nav {
+            width: 60%;
+            .center-cont {
+                gap: 1rem;
+            }
+        }
+        .right-foot-nav {
+            width: 20%;
+            .right-cont {
+                gap: 1.75rem;
+                h4 {
+                    display: none;
+                }
+            }
+        }
+    }
+    .welcome-page {
+        .book-bg-info {
+            width: 100%;
+        }
+    }
+    .book-triplet {
+        .bucket {
+            width: 97%;
+            gap: .5rem;
+            .book-box {
+                .right-book-box {
+                    img {
+                        width: 5rem;
+                        height: 5rem;
+                    }
+                }
+            }
+        }
+    }
+    .best-book {
+        .best-book-cont {
+            width: 100%;
+        }
+    }
+    .get-book {
+        .get-book-cont {
+            width: 95%;
+        }
+    }
+    .get-book {
+        .get-book-cont {
+            .header {
+                .foot {
+                    form {
+                        width: 60%
+                    }
+                }
+            }
+            .get-book-main {
+                .get-started {
+                    @include area(fit-content, 90%);
+                    .right {
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        .cont {
+                            gap: 1.5rem;
+                        }
+                    }
+                }
+                .all-book {}
+            }
+        }
+    }
+}
+
+.community {
+    .community-cont {
+        width: 80%;
+    }
+}
+
+.benefit {
+    .benefit-cont {
+        width: 50%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+footer {
+    .footer-cont {
+        width: 97.5%;
+        .top-footer {
+            .left {
+                width: 19%;
+                gap: .75rem;
+            }
+            .middle {
+                margin: 0;
+                height: 100%;
+                display: flex;
+                align-items: flex-end;
+                width: 54%;
+                .middle-cont {
+                    height: fit-content;
+                    gap: .15rem;
+                    .column {
+                        line-height: 1.5rem;
+                    }
+                }
+            }
+            .right {
+                width: 27%;
+            }
+        }
+        .foot-footer {
+            .left {
+                width: 32%;
+            }
+            .middle {
+                width: 43%;
+                .middle-cont {
+                    gap: 1rem;
+                }
+            }
+            .right {
+                width: 25%;
+                button {
+                    padding: .35rem 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:794px) {
+    .nav-bar {
+        background-color: red;
+    }
+}

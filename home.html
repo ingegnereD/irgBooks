@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>irg Libraries</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- swiper css link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="asset/css/home.css">
+    <!-- media quaries -->
+    <link rel="stylesheet" href="asset/css/query.css">
+</head>
+
+<body>
+    <div class="containeR">
+        <header>
+            <div class="nav-bar" id="nav-bar">
+                <div class="top-nav">
+                    <div class="left-top-nav">
+                        <div class="left-nav-cont">
+                            <!-- <img src="asset/img/book-logo.PNG" alt="store-logo"> -->
+                            <h4>IRG-BOOKS</h4>
+                        </div>
+                    </div>
+                    <div class="center-top-nav">
+                        <form>
+                            <div class="button-bucket">
+                                <button class="category-opt">
+                                    <h4>All Categories</h4>
+                                    <i class="fas fa-caret-down" id="cat-icon"></i>
+                                    <!-- category dropdown -->
+                                    <div class="dropdown">
+                                        <ul>
+                                            <li class="list">
+                                                <a href="#">
+                                                    <h4 class="list-a">Kids Book</h4>
+                                                </a>
+                                            </li>
+                                            <li class="list">
+                                                <a href="#">
+                                                    <h4 class="list-a">Library Fiction</h4>
+                                                </a>
+                                            </li>
+                                            <li class="list">
+                                                <a href="#">
+                                                    <h4 class="list-a">Historian Fiction</h4>
+                                                </a>
+                                            </li>
+                                            <li class="list">
+                                                <a href="#">
+                                                    <h4 class="list-a">Classiic</h4>
+                                                </a>
+                                            </li>
+                                            <li class="list">
+                                                <a href="#">
+                                                    <h4 class="list-a">Horror</h4>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="input-cont">
+                                <input type="text" name="find-book" id="find-book" placeholder="Search...">
+                            </div>
+                            <div class="mic">
+                                <div class="microphone">
+                                    <i class="fas fa-microphone" id="microphone"></i>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="right-top-nav">
+                        <div class="right-nav-cont">
+                            <button class="help round-end button-bg-1">
+                            Help
+                            <i class="fas fa-period" id="dot"></i>
+                        </button>
+                            <button class="round-end button-bg-3 login">
+                            Login/Sign<i class="fas fa-arrow-right" id="right-arrow"></i>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Top Nav and -->
+                <!--Beginning of Foot Nav-->
+                <div class="foot-nav">
+                    <div class="left-foot-nav">
+                        <div class="left-cont">
+                            <a href="#best-book" id="foot-nav-links">
+                                <h4>Best book</h4>
+                            </a>
+                            <a href="#new-in" id="foot-nav-links">
+                                <h4>New in</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- END OF LEFT NAV BAR -->
+                    <div class="center-foot-nav">
+                        <div class="center-cont">
+                            <a href="#speech" id="center-nav-links">
+                                <h4>Review</h4>
+                            </a>
+                            <a href="#get-book" id="center-nav-links">
+                                <h4>Get book</h4>
+                            </a>
+                            <a href="#all-book" id="center-nav-links">
+                                <h4>Book Category</h4>
+                            </a>
+                            <a href="#best-seller" id="center-nav-links">
+                                <h4>Book Sellers</h4>
+                            </a>
+
+
+                        </div>
+                    </div>
+                    <!-- END OF CENTER NAV BAR  -->
+                    <div class="right-foot-nav">
+                        <div class="right-cont">
+                            <i class="fas fa-user" id="user"></i>
+                            <i class="fas fa-bookmark" id="bookmark"></i>
+                            <i class="fas fa-shopping-cart" id="cart"></i>
+                            <h4>Shopping basket</h4>
+
+                        </div>
+                    </div>
+                    <!-- END OF RIGHT NAV BAR -->
+                </div>
+            </div>
+        </header>
+        <!-- END OF HEADER -->
+        <main-and-footer>
+            <main>
+                <div class="main-container">
+                    <!-- Swiper for welocome page walpaper -->
+                    <div class="welcome-page" id="welcome-page">
+                        <!-- Swiper -->
+                        <div class="swiper welcome-bg">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" style="background: url(asset/img/wel-book1.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;"></div>
+                                <div class="swiper-slide" style="background: url(asset/img/wel-book2.jpg);background-position: center; background-repeat: no-repeat; background-size: cover;"></div>
+                                <div class="swiper-slide" style="background: url(asset/img/wel-book3.jpg);background-position: center; background-repeat: no-repeat; background-size: cover;"></div>
+                                <div class="swiper-slide" style="background: url(asset/img/wel-book4.jpg);background-position: center; background-repeat: no-repeat; background-size: cover;"></div>
+
+                            </div>
+                            <!-- Add Pagination -->
+                            <!-- <div class="swiper-pagination"></div> -->
+
+                        </div>
+                        <!-- Below book info is to be absolute to the welcome container -->
+                        <div class="book-bg-info">
+                            <div class="top">
+                                <div class="top-cont">
+                                    <h1 class="full-black">Develop your Imagination</h1>
+                                    <h4>Beautiful Editions for all</h4>
+                                    <button class="round-end button-bg-3">
+                                        Shop now
+                                        <i class="fas fa-arrow-right" id="right-arrow"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- End of book top info -->
+                            <div class="bottom book-reviews">
+                                <!-- Swiper for welcome page rewview-->
+                                <div class="left-book-review">
+                                    <div class="left-cont">
+                                        <small>Reviews</small>
+                                        <h4 class="full-black">654</h4>
+                                    </div>
+                                </div>
+                                <div class="center-book-review">
+                                    <div class="right-cont">
+                                        <div class="swiper review">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide review">
+                                                    <div class="review-box">
+                                                        <div class="cont">
+                                                            <img src="asset/img/user-11.png" alt="">
+                                                            <h6 class="full-black">Clyde</h6>
+                                                            <i class="fas fa-star star"></i>
+                                                            <h5 class="full-black">4.8</h5>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide review">
+                                                    <div class="review-box">
+                                                        <div class="cont">
+                                                            <img src="asset/img/user-1.png" alt="">
+                                                            <h6 class="full-black">Clyde</h6>
+                                                            <i class="fas fa-star star"></i>
+                                                            <h5 class="full-black">4.8</h5>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide review">
+                                                    <div class="review-box">
+                                                        <div class="cont">
+                                                            <img src="asset/img/user-2.png" alt="">
+                                                            <h6 class="full-black">Clyde</h6>
+                                                            <i class="fas fa-star star"></i>
+                                                            <h5 class="full-black">4.8</h5>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide review">
+                                                    <div class="review-box">
+                                                        <div class="cont">
+                                                            <img src="asset/img/user-3.png" alt="">
+                                                            <h6 class="full-black">Clyde</h6>
+                                                            <i class="fas fa-star star"></i>
+                                                            <h5 class="full-black">4.8</h5>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide review">
+                                                    <div class="review-box">
+                                                        <div class="cont">
+                                                            <img src="asset/img/user-4.png" alt="">
+                                                            <h6 class="full-black">Clyde</h6>
+                                                            <i class="fas fa-star star"></i>
+                                                            <h5 class="full-black">4.8</h5>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide review">
+                                                    <div class="review-box">
+                                                        <div class="cont">
+                                                            <img src="asset/img/user-5.png" alt="">
+                                                            <h6 class="full-black">Clyde</h6>
+                                                            <i class="fas fa-star star"></i>
+                                                            <h5 class="full-black">4.8</h5>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide review">
+                                                    <div class="review-box">
+                                                        <div class="cont">
+                                                            <img src="asset/img/user-6.png" alt="">
+                                                            <h6 class="full-black">Clyde</h6>
+                                                            <i class="fas fa-star star"></i>
+                                                            <h5 class="full-black">4.8</h5>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide review">
+                                                    <div class="review-box">
+                                                        <div class="cont">
+                                                            <img src="asset/img/user-7.png" alt="">
+                                                            <h6 class="full-black">Clyde</h6>
+                                                            <i class="fas fa-star star"></i>
+                                                            <h5 class="full-black">4.8</h5>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide review">
+                                                    <div class="review-box">
+                                                        <div class="cont">
+                                                            <img src="asset/img/user-8.png" alt="">
+                                                            <h6 class="full-black">Clyde</h6>
+                                                            <i class="fas fa-star star"></i>
+                                                            <h5 class="full-black">4.8</h5>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide review">
+                                                    <div class="review-box">
+                                                        <div class="cont">
+                                                            <img src="asset/img/user-9.png" alt="">
+                                                            <h6 class="full-black">Clyde</h6>
+                                                            <i class="fas fa-star star"></i>
+                                                            <h5 class="full-black">4.8</h5>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide review">
+                                                    <div class="review-box">
+                                                        <div class="cont">
+                                                            <img src="asset/img/user-10.png" alt="">
+                                                            <h6 class="full-black">Clyde</h6>
+                                                            <i class="fas fa-star star"></i>
+                                                            <h5 class="full-black">4.8</h5>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
+                                            <!-- Add Pagination -->
+                                            <!-- <div class="swiper-pagination"></div> -->
+                                            <!-- Add Arrows -->
+                                            <!-- <div class="swiper-button-next next"></div> -->
+                                            <!-- <div class="swiper-button-prev"></div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right-book-review right-review">
+                                    <i class="fas fa-angle-right right-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-----------------------END OF WELCOME PAGE--------------------->
+                    <div class="book-triplet">
+                        <div class="bucket">
+                            <div class="book-box">
+                                <div class="left-book-box">
+                                    <h4 class="full-black">The best books to give as gift this year</h4>
+                                    <small>Great collection for all</small>
+                                </div>
+                                <div class="right-book-box">
+                                    <img src="asset/img/user-10.png" alt="">
+                                </div>
+                            </div>
+                            <div class="book-box">
+                                <div class="left-book-box">
+                                    <h4 class="full-black">The best books to give as gift this year</h4>
+                                    <small>Great collection for all</small>
+                                </div>
+                                <div class="right-book-box">
+                                    <img src="asset/img/user-10.png" alt="">
+                                </div>
+                            </div>
+                            <div class="book-box">
+                                <div class="left-book-box">
+                                    <h4 class="full-black">The best books to give as gift this year</h4>
+                                    <small>Great collection for all</small>
+                                </div>
+                                <div class="right-book-box">
+                                    <img src="asset/img/user-10.png" alt="">
+                                </div>
+                            </div>
+                            <div class="book-box">
+                                <div class="left-book-box">
+                                    <h4 class="full-black">The best books to give as gift this year</h4>
+                                    <small>Great collection for all</small>
+                                </div>
+                                <div class="right-book-box">
+                                    <img src="asset/img/user-10.png" alt="">
+                                </div>
+                            </div>
+                            <div class="book-box">
+                                <div class="left-book-box">
+                                    <h4 class="full-black">Free Worldwide Delivery</h4>
+                                    <small>Yeah shop now</small>
+                                </div>
+                                <div class="right-book-box">
+                                    <img src="asset/img/user-10.png" alt="">
+                                </div>
+                            </div>
+                            <div class="book-box">
+                                <div class="left-book-box">
+                                    <h4 class="full-black">Free Worldwide Delivery</h4>
+                                    <small>Yeah shop now</small>
+                                </div>
+                                <div class="right-book-box">
+                                    <img src="asset/img/user-10.png" alt="">
+                                </div>
+                            </div>
+                            <div class="book-box">
+                                <div class="left-book-box">
+                                    <h4 class="full-black">Free Worldwide Delivery</h4>
+                                    <small>Yeah shop now</small>
+                                </div>
+                                <div class="right-book-box">
+                                    <img src="asset/img/user-10.png" alt="">
+                                </div>
+                            </div>
+                            <div class="book-box">
+                                <div class="left-book-box">
+                                    <h4 class="full-black">Christmas Crackers</h4>
+                                    <small>Great collection for all</small>
+                                </div>
+                                <div class="right-book-box">
+                                    <img src="asset/img/user-10.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------------------END OF BOOK TRIPLET------------------->
+                    <div class="best-book" id="best-book">
+                        <div class="best-book-cont">
+                            <div class="top-best-book">
+                                <h2 class="full-black">The best Books</h2>
+                                <small>Great collection for all</small>
+                            </div>
+                            <div class="main-best-book">
+                                <div class="cont">
+                                    <div class="swiper best">
+                                        <div class="swiper-wrapper best-book-holder">
+                                            <!-- Populated using BOOK API JS -->
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <!-- <div class="swiper-pagination"></div> -->
+                                        <!-- Add Arrows -->
+                                        <!-- <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------------------END OF BEST BOOKS----------------------->
+                    <div class="new-book" id="new-in">
+                        <div class="new-book-cont">
+                            <div class="heading" id="new-in">
+                                <h2>New in</h2>
+                            </div>
+                            <div class="main">
+                                <div class="swiper new-book-slider">
+                                    <div class="swiper-wrapper new-in-func">
+                                        <!-- This is populated using BOOK API -->
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <!-- <div class="swiper-pagination"></div> -->
+                                    <!-- Add Arrows -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------------------- END OF NEW BOOKS ------------------------->
+                    <div class="wirter-speech" id="speech">
+                        <div class="writer-cont">
+                            <div class="left-writer">
+                                <i class="fas fa-angle-left prev"></i>
+                            </div>
+                            <div class="swiper writer-slider">
+                                <div class="swiper-wrapper writer">
+                                    <div class="swiper-slide">
+                                        <div class="speech">
+                                            <div class="note">
+                                                <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti nostrum nisi, corporis accusantium, nihil dolorem, omnis quis inventore ex blanditiis enim recusandae modi vitae. Lorem ipsum dolor
+                                                    sit amet consectetur adipisicing elit. Rem id dolor dolore doloribus nemo hic eum eos dignissimos architecto nobis?
+                                                </h4>
+                                            </div>
+                                            <div class="profile">
+                                                <div class="img-rating">
+                                                    <img src="asset/img/user-1.png" alt="">
+                                                    <div class="review">
+                                                        <i class="fas fa-star star"></i>
+                                                        <h5>4.8</h5>
+                                                    </div>
+                                                </div>
+                                                <h4 class="full-black">Emma Watson</h4>
+                                                <small>New York</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="speech">
+                                            <div class="note">
+                                                <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti nostrum nisi, corporis accusantium, nihil dolorem, omnis quis inventore ex blanditiis enim recusandae modi vitae. Lorem ipsum dolor
+                                                    sit amet consectetur adipisicing elit. Rem id dolor dolore doloribus nemo hic eum eos dignissimos architecto nobis?
+                                                </h4>
+                                            </div>
+                                            <div class="profile">
+                                                <div class="img-rating">
+                                                    <img src="asset/img/user-1.png" alt="">
+                                                    <div class="review">
+                                                        <i class="fas fa-star star"></i>
+                                                        <h5>4.8</h5>
+                                                    </div>
+                                                </div>
+                                                <h4 class="full-black">Emma Watson</h4>
+                                                <small>New York</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="speech">
+                                            <div class="note">
+                                                <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti nostrum nisi, corporis accusantium, nihil dolorem, omnis quis inventore ex blanditiis enim recusandae modi vitae. Lorem ipsum dolor
+                                                    sit amet consectetur adipisicing elit. Rem id dolor dolore doloribus nemo hic eum eos dignissimos architecto nobis?
+                                                </h4>
+                                            </div>
+                                            <div class="profile">
+                                                <div class="img-rating">
+                                                    <img src="asset/img/user-1.png" alt="">
+                                                    <div class="review">
+                                                        <i class="fas fa-star star"></i>
+                                                        <h5>4.8</h5>
+                                                    </div>
+                                                </div>
+                                                <h4 class="full-black">Emma Watson</h4>
+                                                <small>New York</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="speech">
+                                            <div class="note">
+                                                <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti nostrum nisi, corporis accusantium, nihil dolorem, omnis quis inventore ex blanditiis enim recusandae modi vitae. Lorem ipsum dolor
+                                                    sit amet consectetur adipisicing elit. Rem id dolor dolore doloribus nemo hic eum eos dignissimos architecto nobis?
+                                                </h4>
+                                            </div>
+                                            <div class="profile">
+                                                <div class="img-rating">
+                                                    <img src="asset/img/user-1.png" alt="">
+                                                    <div class="review">
+                                                        <i class="fas fa-star star"></i>
+                                                        <h5>4.8</h5>
+                                                    </div>
+                                                </div>
+                                                <h4 class="full-black">Emma Watson</h4>
+                                                <small>New York</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="speech">
+                                            <div class="note">
+                                                <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti nostrum nisi, corporis accusantium, nihil dolorem, omnis quis inventore ex blanditiis enim recusandae modi vitae. Lorem ipsum dolor
+                                                    sit amet consectetur adipisicing elit. Rem id dolor dolore doloribus nemo hic eum eos dignissimos architecto nobis?
+                                                </h4>
+                                            </div>
+                                            <div class="profile">
+                                                <div class="img-rating">
+                                                    <img src="asset/img/user-1.png" alt="">
+                                                    <div class="review">
+                                                        <i class="fas fa-star star"></i>
+                                                        <h5>4.8</h5>
+                                                    </div>
+                                                </div>
+                                                <h4 class="full-black">Emma Watson</h4>
+                                                <small>New York</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Add Pagination -->
+                                <!-- <div class="swiper-pagination"></div> -->
+                                <!-- Add Arrows -->
+                            </div>
+                            <div class="right-writer">
+                                <i class="fas fa-angle-right next"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!---------------- END OF WRITER SPEECH -------------------->
+                    <div class="get-book" id="get-book">
+                        <div class="get-book-cont">
+                            <div class="header button-bg-2">
+                                <div class="top">
+                                    <h6 class="highlight">New users 15% off</h6>
+                                    <h3>Fill your house with stacks of books, in all the crannies and all the nooks</h3>
+                                </div>
+                                <div class="foot">
+                                    <form>
+                                        <input type="email" name="email" id="email" placeholder="Email here">
+                                        <button class="round-end button-bg-2">
+                                            <div class="content">
+                                            <input type="submit" value="Suscribe" id="suscribe">
+                                            <i class="fas fa-arrow-right" id="right-arrow"></i>
+                                            </div>
+                                        </button>
+                                    </form>
+                                    <a href="#">
+                                        <h5>First order only, You're ready?</h5>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- END OF GET BOOK HEADER -->
+                            <div class="get-book-main">
+                                <div class="get-book-nav">
+                                    <div class="left-nav">
+                                        <div class="cont">
+                                            <a href="#" class="nav-link">Kids Books</a>
+                                            <a href="#" class="nav-link">Library Fiction</a>
+                                        </div>
+                                    </div>
+                                    <div class="middle-nav">
+                                        <div class="cont">
+                                            <a href="#" class="nav-link">Historian Fiction</a>
+                                            <a href="#" class="nav-link">Classic</a>
+                                        </div>
+                                    </div>
+                                    <div class="right-nav">
+                                        <div class="cont">
+                                            <a href="#" class="nav-link">Horror</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END OF GET BOOK NAVIGATION -->
+                                <div class="get-started">
+                                    <div class="get-started-img left">
+                                        <img src="asset/img/wel-book2.jpg" alt="">
+                                    </div>
+                                    <div class="get-started-note right">
+                                        <div class="cont">
+                                            <a href="#" class="take-all">Take everything</a>
+                                            <h2 class="full-black">Unlimited Fountain of Fantasy & Entertainment brough to you by a Click of A Button </h2>
+                                            <short>Beautiful edition for all</short>
+                                            <button class="round-end button-bg-2 show-all-cat">
+                                                Get started <i class="fas fa-arrow-right" id="right-arrow"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END OF GETING STARTED -->
+                                <!-- ALL BOOK CATEGORIES -->
+                                <div class="all-book" id="all-book">
+                                    <div class="swiper all-book-cat">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide kid-book">
+                                                <div class="cont">
+                                                    <h3 class="full-black">For Kids</h3>
+                                                    <div class="main first-cat">
+                                                        <div class="book">
+                                                            <div class="book-cont">
+                                                                <div class="book-img">
+                                                                    <img src="asset/img/user-3.png" alt="">
+                                                                </div>
+                                                                <div class="book-info">
+                                                                    <div class="review">
+                                                                        <i class="fas fa-star star"></i>
+                                                                        <h5 class="full-black">4.7</h5>
+                                                                    </div>
+                                                                    <h4 class="full-black">Can't live here anymore</h4>
+                                                                    <small>Harry E. Moana</small>
+                                                                    <button class="round-end button-bg-2">
+                                                                        Bookmark
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <!--The rest will be generated using JS -->
+                                            </div>
+                                            <div class="swiper-slide library-fiction">
+                                                <div class="cont">
+                                                    <h3 class="full-black">Library Ficton</h3>
+                                                    <div class="main second-cat">
+                                                        <!-- <div class="book">
+                                                            <div class="book-cont">
+                                                                <div class="book-img">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                                <div class="book-info">
+                                                                    <div class="review">
+                                                                        <i class="fas fa-star star"></i>
+                                                                        <h5 class="full-black">4.7</h5>
+                                                                    </div>
+                                                                    <h4 class="full-black">Can't live here anymore</h4>
+                                                                    <small>Harry E. Moana</small>
+                                                                    <button class="round-end button-bg-2">
+                                                                        Bookmark
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+                                                    <!--The rest will be generated using JS -->
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide history-fiction">
+                                                <div class="cont">
+                                                    <h3 class="full-black">Historical Fiction</h3>
+                                                    <div class="main third-cat">
+                                                        <div class="book">
+                                                            <div class="book-cont">
+                                                                <div class="book-img">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                                <div class="book-info">
+                                                                    <div class="review">
+                                                                        <i class="fas fa-star star"></i>
+                                                                        <h5 class="full-black">4.7</h5>
+                                                                    </div>
+                                                                    <h4 class="full-black">Can't live here anymore</h4>
+                                                                    <small>Harry E. Moana</small>
+                                                                    <button class="round-end button-bg-2">
+                                                                        Bookmark
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--The rest will be generated using JS -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide classic">
+                                                <div class="cont">
+                                                    <h3 class="full-black">Classic</h3>
+                                                    <div class="main fourth-cat">
+                                                        <div class="book">
+                                                            <div class="book-cont">
+                                                                <div class="book-img">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                                <div class="book-info">
+                                                                    <div class="review">
+                                                                        <i class="fas fa-star star"></i>
+                                                                        <h5 class="full-black">4.7</h5>
+                                                                    </div>
+                                                                    <h4 class="full-black">Can't live here anymore</h4>
+                                                                    <small>Harry E. Moana</small>
+                                                                    <button class="round-end button-bg-2">
+                                                                        Bookmark
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--The rest will be generated using JS -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide horror">
+                                                <div class="cont">
+                                                    <h3 class="full-black">Horror</h3>
+                                                    <div class="main fifth-cat">
+                                                        <div class="book">
+                                                            <div class="book-cont">
+                                                                <div class="book-img">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                                <div class="book-info">
+                                                                    <div class="review">
+                                                                        <i class="fas fa-star star"></i>
+                                                                        <h5 class="full-black">4.7</h5>
+                                                                    </div>
+                                                                    <h4 class="full-black">Can't live here anymore</h4>
+                                                                    <small>Harry E. Moana</small>
+                                                                    <button class="round-end button-bg-2">
+                                                                        Bookmark
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--The rest will be generated using JS -->
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <!-- <div class="swiper-pagination"></div> -->
+                                        <!-- Add Arrows -->
+                                        <!-- <div class="swiper-button-next button-next"></div>
+                                        <div class="swiper-button-prev button-prev"></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!----------------------END OF GET BOOK------------------------>
+                    <div class="best-seller" id="best-seller">
+                        <div class="best-seller-cont">
+                            <div class="heading">
+                                <h2 class="full-black">Best sellers</h2>
+                                <small>Great collection for all</small>
+                            </div>
+                            <div class="main">
+                                <div class="cont">
+                                    <div class="swiper best-seller-slider">
+                                        <div class="swiper-wrapper show-best-seller">
+
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <!-- <div class="swiper-pagination"></div> -->
+                                        <!-- Add Arrows -->
+                                        <!-- <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div> -->
+                                    </div>
+                                </div>
+                                <!-- End of Third Part -->
+                            </div>
+                        </div>
+                    </div>
+                    <!----------------------END OF BEST SELLERS-------------------->
+
+                    <div class="benefit">
+                        <div class="benefit-cont">
+                            <div class="bucket">
+                                <div class="left-bucket">
+                                    <h4>1</h4>
+                                </div>
+                                <div class="right-bucket">
+                                    <div class="top">
+                                        <h4>Free Worldwide Delivery</h4>
+                                        <small>Irrespective of your locationm we will reach you</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bucket">
+                                <div class="left-bucket">
+                                    <h4>2</h4>
+                                </div>
+                                <div class="right-bucket">
+                                    <div class="top">
+                                        <h4>Free Return for all</h4>
+                                        <small>As long as book is in good condition</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bucket">
+                                <div class="left-bucket">
+                                    <h4>3</h4>
+                                </div>
+                                <div class="right-bucket">
+                                    <div class="top">
+                                        <h4>10% Student Discount</h4>
+                                        <small>Many more offers to be offered.</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bucket">
+                                <div class="left-bucket">
+                                    <h4>4</h4>
+                                </div>
+                                <div class="right-bucket">
+                                    <div class="top">
+                                        <h4>Gift Vouchers</h4>
+                                        <small>we love to see you smile...</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!----------------------END OF BENEFITS------------------------>
+
+                    <div class="christmas">
+                        <div class="header">
+                            <h2>Want to get it in time for Christmas Day?</h2>
+                            <smallest>Amazing Edition for all</smallest>
+                        </div>
+                        <div class="main">
+                            <div class="extreme-left">
+                                <img src="asset/img/user-4.png" alt="">
+                            </div>
+                            <div class="middle">
+                                <div class="top">
+                                    <button class="round-end button-bg-2">
+                                        Suscribe<i class="fas fa-arrow-right" id="right-arrow"></i>
+                                    </button>
+                                </div>
+                                <div class="main">
+                                    <div class="first">
+                                        <div class="left"><img src="asset/img/user-3.png" alt=""></div>
+                                        <div class="right"><img src="asset/img/user-9.png" alt=""></div>
+                                    </div>
+                                    <div class="second">
+                                        <div class="left"><img src="asset/img/user-2.png" alt=""></div>
+                                        <div class="right"><img src="asset/img/user-12.png" alt=""></div>
+                                    </div>
+                                    <div class="third">
+                                        <div class="left"><img src="asset/img/user-11.png" alt=""></div>
+                                        <div class="right"><img src="asset/img/user-10.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="extreme-right">
+                                <img src="asset/img/user-5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-----------------------END OF CHRISTMAS OFFERS--------------->
+
+                    <div class="community">
+                        <div class="community-cont">
+                            <h4>Join our community</h4>
+                            <form>
+                                <input type="email" name="email" id="community-email" placeholder="Drop Email">
+                                <button class="round-end button-bg-2">
+                                    <div class="content">
+                                    <input type="submit" id="join-community">
+                                    <i class="fas fa-arrow-right" id="right-arrow"></i>
+                                    </div>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-----------------------END OF JOIN COMMUNITY----------------->
+                </div>
+                <!-- end of main container -->
+            </main>
+            <!-- END OF MAIN -->
+            <footer>
+                <div class="footer-cont">
+                    <div class="top-footer">
+                        <div class="left">
+                            <div class="head">
+                                <h4>IRG-BOOKS</h4>
+                            </div>
+                            <div class="address">
+                                <h4>Harperwood, London NW2 6QG, UK</h4>
+                            </div>
+                            <div class="social">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+
+                        </div>
+                        <!-- End of left -->
+                        <div class="middle">
+                            <div class="head"></div>
+
+                            <div class="middle-cont">
+                                <div class="column">
+                                    <a href="#">New in</a>
+                                    <a href="#">Collection</a>
+                                    <a href="#">Authors</a>
+                                    <a href="#">Commnunity</a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">Products</a>
+                                    <a href="#">Gift vouchers</a>
+                                    <a href="#">Brands</a>
+                                    <a href="#">Story</a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">Best books</a>
+                                    <a href="#">Books Categories</a>
+                                    <a href="#">Best Sellers</a>
+                                    <a href="#">Christmas wants</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Middle -->
+                        <div class="right">
+                            <div class="right-cont">
+                                <button class="round-end button-bg-1">
+                                    Help<i class="fas fa-period" id="period"></i>
+                                </button>
+                                <button class="round-end button-bg-3">
+                                    FAQ'S<i class="fas fa-arrow-right" id="right-arrow"></i>
+                               </button>
+                            </div>
+                        </div>
+                        <!-- End of Right -->
+                    </div>
+                    <!-- END OF TOP FOOTER -->
+                    <div class="foot-footer">
+                        <div class="left">
+                            <h4>&copy; 2022 IRG-Connections</h4>
+                        </div>
+                        <div class="middle">
+                            <div class="middle-cont">
+                                <a href="#">Privacy policy</a>
+                                <a href="#">Term of use</a>
+                                <a href="#">Cookies</a>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <button class="round-end">
+                                <a href="#welcome-page"> Scroll to top</a>
+                                <i class="fas fa-arrow-right" id="right-arrow"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- END OF FOOTER -->
+        </main-and-footer>
+    </div>
+
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+    <script src="asset/js/book-store.js"></script>
+    <script src="asset/js/store-bank.js"></script>
+    <script src="asset/js/UI.js"></script>
+
+    <script src="asset/js/app.js"></script>
+    <!-- Swiper script -->
+    <script src="asset/js/slide.js"></script>
+
+</body>
+
+</html>
