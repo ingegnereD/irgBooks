@@ -2,9 +2,16 @@
 const store = new Book
 const ui = new UI
 
+const container = document.querySelector('.containeR')
 const showAllCat = document.querySelector('.show-all-cat');
+const showMenu = document.querySelector('.menu-icon');
+const hideMenu = document.querySelector('.close-icon');
+const aside = document.querySelector('aside')
+
 // Event Listners
 showAllCat.addEventListener('click', showCat);
+showMenu.addEventListener('click', showMenuBar)
+hideMenu.addEventListener('click', hideMenuBar)
 
 //Getting desired book categories
 function getBookCat() {
@@ -125,5 +132,42 @@ function showBestSeller(index, data) {
 
 function showCat(e) {
     ui.showAllBooks()
+    e.preventDefault()
+}
+
+function showMenuBar(e) {
+    aside.classList.remove('aside-inactive')
+    container.style = 'filter: grayscale(.85)'
+
+    setTimeout(() => {
+        aside.classList.toggle('aside-active')
+        aside.style = 'filter: grayscale(0);'
+    }, 100);
+    showMenu.classList.toggle('menu-icon-active')
+
+    setTimeout(() => {
+        showMenu.style = 'display: none'
+        showMenu.classList.remove('menu-icon-active')
+        hideMenu.style = 'display: block'
+    }, 201);
+    e.preventDefault()
+}
+
+function hideMenuBar(e) {
+    aside.classList.remove('aside-active')
+    setTimeout(() => {
+        aside.classList.toggle('aside-inactive')
+        container.style = 'filter: grayscale(0);'
+
+    }, 100);
+    hideMenu.classList.toggle('close-icon-active')
+    setTimeout(() => {
+        hideMenu.style = 'display: none'
+        hideMenu.classList.remove('close-icon-active')
+
+        showMenu.style = 'display: block'
+    }, 201);
+    e.preventDefault()
+
     e.preventDefault()
 }

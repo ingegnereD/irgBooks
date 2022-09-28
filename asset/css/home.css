@@ -134,6 +134,9 @@ header {
   justify-content: center;
   align-items: center;
 }
+.nav-bar aside {
+  display: none;
+}
 
 .top-nav {
   height: 100%;
@@ -174,6 +177,9 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.top-nav .center-top-nav .search {
+  display: none;
 }
 .top-nav .center-top-nav form {
   background-color: white;
@@ -358,6 +364,12 @@ header {
   grid-template-columns: repeat(2, auto);
   gap: 1rem;
 }
+.top-nav .right-top-nav .right-nav-cont .menu-icon {
+  display: none;
+}
+.top-nav .right-top-nav .right-nav-cont .close-icon {
+  display: none;
+}
 .top-nav .right-top-nav .right-nav-cont .help {
   position: relative;
 }
@@ -394,7 +406,7 @@ header {
 }
 .foot-nav .left-foot-nav {
   height: 100%;
-  width: 27%;
+  width: 21%;
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -413,7 +425,7 @@ header {
 }
 .foot-nav .center-foot-nav {
   height: 100%;
-  width: 46%;
+  width: 58%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -428,7 +440,7 @@ header {
   width: fit-content;
   display: grid;
   grid-template-columns: repeat(5, auto);
-  gap: 3rem;
+  gap: 2rem;
 }
 .foot-nav .center-foot-nav .center-cont h4 {
   cursor: pointer;
@@ -439,7 +451,7 @@ header {
 }
 .foot-nav .right-foot-nav {
   height: 100%;
-  width: 27%;
+  width: 21%;
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -466,7 +478,7 @@ header {
 .foot-nav .right-foot-nav .right-cont #user:hover,
 .foot-nav .right-foot-nav .right-cont #bookmark:hover,
 .foot-nav .right-foot-nav .right-cont #cart:hover {
-  color: orangered;
+  color: #f24e1d;
   transform: scale(1.5);
 }
 .foot-nav .right-foot-nav .right-cont h4:hover {
@@ -512,7 +524,6 @@ main .main-container {
   position: relative;
 }
 .welcome-page .welcome-bg {
-  background-color: red;
   height: 100%;
   width: 100vw;
   position: relative;
@@ -1032,6 +1043,7 @@ main .main-container {
   font-size: 0.8rem;
   color: #262626;
   font-family: "Manrope", sans-serif;
+  text-align: center;
 }
 .new-book .new-book-cont .main .new-book-slider .swiper-wrapper .swiper-slide .book .book-info button {
   height: -webkit-fit-content;

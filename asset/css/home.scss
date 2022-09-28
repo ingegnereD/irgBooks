@@ -175,7 +175,7 @@ header {
     background-color: $header-bg;
     @include flex(row,
     center,
-    center)
+    center);
 }
 
 .nav-bar {
@@ -183,7 +183,10 @@ header {
     90%);
     @include flex(column,
     center,
-    center)
+    center);
+    aside {
+        display: none;
+    }
 }
 
 .top-nav {
@@ -218,6 +221,9 @@ header {
         @include flex(row,
         center,
         center);
+        .search {
+            display: none;
+        }
         form {
             background-color: $white-bg;
             border-radius: 10rem;
@@ -371,6 +377,12 @@ header {
             fit-content);
             @include autocolgrid(2);
             gap: 1rem;
+            .menu-icon {
+                display: none;
+            }
+            .close-icon {
+                display: none;
+            }
             .help {
                 position: relative;
                 #dot {
@@ -410,7 +422,7 @@ header {
     }
     .left-foot-nav {
         @include area(100%,
-        27%);
+        21%);
         @include flex(row,
         start,
         center);
@@ -423,7 +435,7 @@ header {
     }
     .center-foot-nav {
         @include area(100%,
-        46%);
+        58%);
         @include flex(row,
         center,
         center);
@@ -431,7 +443,7 @@ header {
             @include area(fit-content,
             fit-content);
             @include autocolgrid(5);
-            gap: 3rem;
+            gap: 2rem;
             h4 {
                 cursor: pointer;
                 transition: all 300ms ease;
@@ -443,7 +455,7 @@ header {
     }
     .right-foot-nav {
         @include area(100%,
-        27%);
+        21%);
         @include flex(row,
         end,
         center);
@@ -459,7 +471,7 @@ header {
                 transition: all 250ms ease;
                 cursor: pointer;
                 &:hover {
-                    color: orangered;
+                    color: $orangered;
                     transform: scale(1.5)
                 }
             }
@@ -477,7 +489,6 @@ main-and-footer {
     @include area(100%,
     100%);
     display: grid;
-    // place-content: center;
     place-items: center;
     grid-template-rows: auto;
     overflow-x: hidden;
@@ -508,7 +519,6 @@ main {
     center);
     position: relative;
     .welcome-bg {
-        background-color: red;
         @include area(100%,
         100vw);
         position: relative;
@@ -968,6 +978,7 @@ main {
                                     @include text(.8rem,
                                     $full-black-text-color,
                                     $font-manrope);
+                                    text-align: center;
                                 }
                                 button {
                                     @include area(fit-content,
